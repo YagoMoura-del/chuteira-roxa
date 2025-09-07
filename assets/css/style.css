@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 40px; /* Ajuste a altura do logo para o tamanho da foto */
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 250px;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(131, 82, 164) 0%, rgb(131, 82, 164) 10%, rgb(0, 0, 0) 100%);
+    color: var(--white);
+    padding: 350px;
+    gap: 40px;
+    width: auto;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.container-imagem {
+    flex-shrink: 0;
+    margin-left: -40%;
+
+}
+
+.imagem {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.container-texto {
+    text-align: left;
+    white-space: nowrap;
+}
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    }
+
+    .container-texto {
+        text-align: center;
+        white-space: normal;
+}
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:  2rem;
+}
+.cards{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+.cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.cards i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+}
+.fa-html5{
+    color: #e34f26;
+    font-size: 4rem;
+}
+.fa-css3-alt{
+    color: #1572b6;
+    font-size: 4rem;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 5px 15px;
+    flex-grow: 1;
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.barra-pesquisa input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.barra-pesquisa i {
+    color: #888;
+}
+
+.container-menu i {
+    font-size: 24px;
+}
