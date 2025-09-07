@@ -14,7 +14,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    height: 40px; /* Ajuste a altura do logo para o tamanho da foto */
+    height: 40px;
 }
 
 .barra-pesquisa {
@@ -143,4 +143,5 @@ body {
 
 .container-menu i {
     font-size: 24px;
+
 }
