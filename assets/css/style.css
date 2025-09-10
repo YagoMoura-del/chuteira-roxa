@@ -3,57 +3,76 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: #f5f5f5;
+    color: #333;
 }
-
-
 .logo {
     display: flex;
     align-items: center;
     height: 40px;
 }
-
 .barra-pesquisa {
     display: flex;
     align-items: center;
-    background-color: var(--gray);
+    background-color: #ddd;
     border-radius: 20px;
     padding: 5px 15px;
     width: 250px;
 }
-
 .container {
     display: flex;
     justify-content: left;
     align-items: center;
     background: linear-gradient(90deg, rgb(131, 82, 164) 0%, rgb(131, 82, 164) 10%, rgb(0, 0, 0) 100%);
-    color: var(--white);
+    color: white;
     padding: 350px;
     gap: 40px;
     width: auto;
     margin: 0 auto;
     height: 300px;
 }
-
 .container-imagem {
     flex-shrink: 0;
-    margin-left: -40%;
-
+    margin-left: -20%;
 }
-
 .imagem {
     width: 100%;
     max-width: 500px;
     height: auto;
 }
-
 .container-texto {
     text-align: left;
     white-space: nowrap;
+}
+.galeria-de-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #000;
+    max-width: 700px;
+    margin: 20px auto;
+}
+.item-da-galeria {
+    border: 3px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: white;
+}
+.item-da-galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+@media (min-width: 768px) {
+    .galeria-de-produtos {
+     
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem;
+    }
 }
 @media (max-width: 1200px) {
     .gallery {
@@ -66,11 +85,11 @@ body {
         flex-direction: column;
         gap: 10px;
     }
-    }
+}
 
-    .container-texto {
-        text-align: center;
-        white-space: normal;
+.container-texto {
+    text-align: center;
+    white-space: normal;
 }
 .container-cards{
     display: flex;
@@ -113,11 +132,9 @@ body {
     background: linear-gradient(90deg, #000000 0%, #1a1a1a 100%);
     color: white;
 }
-
 .logo img {
     height: 40px;
 }
-
 .barra-pesquisa {
     display: flex;
     align-items: center;
@@ -128,7 +145,6 @@ body {
     max-width: 400px;
     margin: 0 20px;
 }
-
 .barra-pesquisa input {
     background: none;
     border: none;
@@ -136,12 +152,9 @@ body {
     color: white;
     width: 100%;
 }
-
 .barra-pesquisa i {
     color: #888;
 }
-
 .container-menu i {
     font-size: 24px;
-
 }
