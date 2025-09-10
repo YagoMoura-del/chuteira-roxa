@@ -46,30 +46,179 @@ body {
     text-align: left;
     white-space: nowrap;
 }
+.container-texto-detalhado {
+    text-align: left;
+    padding: 2rem;
+    color: white;
+    max-width: 400px;
+}
+
+.marca {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-produto {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.preco {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.cores {
+    margin-bottom: 1.5rem;
+}
+
+.subtitulo-cores {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.opcoes-cores {
+    display: flex;
+    gap: 10px;
+}
+
+.cor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.cor.roxo {
+    background-color: #8352a4;
+}
+
+.cor.laranja {
+    background-color: #ff8c00;
+}
+
+.cor.cinza {
+    background-color: #a9a9a9;
+}
+
+.botao-comprar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+    background-color: #333;
+}
+
+.descricao-produto {
+    margin-top: 2rem;
+}
+
+.titulo-descricao {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.descricao-produto ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.descricao-produto li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
 .galeria-de-produtos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding: 2rem;
     background-color: #000;
-    max-width: 700px;
     margin: 20px auto;
 }
 .item-da-galeria {
+    width: 23%;
     border: 3px solid white;
     padding: 0.5rem;
     border-radius: 10px;
     background-color: white;
+    height: 250px;
 }
 .item-da-galeria img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: contain;
 }
+.mbappe-container {
+    background-color: #000;
+    padding: 2rem;
+    margin: 20px auto;
+    max-width: 900px;
+    color: white;
+    border: 3px solid #6c5791;
+    border-radius: 10px;
+}
+.mbappe-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.mbappe-imagem{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.mbappe-imagem {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mbappe-primeiro-texto {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.mbappe-segundo-texto {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .mbappe-conteudo {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+    .mbappe-imagem-wrapper {
+        width: 100%;
+    }
+}
 @media (min-width: 768px) {
     .galeria-de-produtos {
-     
         grid-template-columns: repeat(4, 1fr);
         padding: 2rem;
     }
