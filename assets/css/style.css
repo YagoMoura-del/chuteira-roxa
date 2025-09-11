@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+}  
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    background-color: #000;
 }
 .logo {
     display: flex;
@@ -86,38 +87,6 @@ body {
     display: flex;
     gap: 10px;
 }
-
-.cor {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid white;
-    cursor: pointer;
-}
-
-.cor.roxo {
-    background-color: #8352a4;
-}
-
-.cor.laranja {
-    background-color: #ff8c00;
-}
-
-.cor.cinza {
-    background-color: #a9a9a9;
-}
-
-.botao-comprar {
-    background-color: #000;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
 .botao-comprar:hover {
     background-color: #333;
 }
@@ -194,13 +163,7 @@ body {
     height: auto;
     display: block;
 }
-
-.mbappe-primeiro-texto {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.mbappe-segundo-texto {
+.mbappe-texto02 {
     font-size: 0.9rem;
     line-height: 1.6;
 }
@@ -252,7 +215,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin: 1rem;
     padding: 1rem;
-    width: 15rem;
+    width: 27rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s ease;
 }
@@ -263,15 +226,6 @@ body {
 .cards i{
     font-size: 3rem;
     margin-bottom: 1rem;
-
-}
-.fa-html5{
-    color: #e34f26;
-    font-size: 4rem;
-}
-.fa-css3-alt{
-    color: #1572b6;
-    font-size: 4rem;
 }
 .menu {
     display: flex;
@@ -306,4 +260,16 @@ body {
 }
 .container-menu i {
     font-size: 24px;
+}
+.container-footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #8352a4;
+  color: #fff;
+  margin-top: 40px; 
+}
+
+.container-footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
