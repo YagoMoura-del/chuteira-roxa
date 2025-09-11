@@ -268,8 +268,51 @@ body {
   color: #fff;
   margin-top: 40px; 
 }
-
 .container-footer p {
   margin: 0;
   font-size: 0.9rem;
 }
+footer{
+    text-align: center;
+    width: 1900px;
+    height: 150px;
+    margin: 50px auto;
+    background-color: #8352a4;
+    margin-bottom: 0;
+}
+footer nav{
+    display: inline-block;
+}footer #footer-links{
+    list-style: none;
+}
+footer #footer-links li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 30px;
+     margin-top: 50px;
+}
+footer #footer-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#copyright{
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+.centralizador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario{
+  height: 240px;
+  width: 560px;
+  border: 3px solid #6c5791;
+  border-radius: 10px;
+}
+
+
